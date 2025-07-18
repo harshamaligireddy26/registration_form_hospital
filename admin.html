@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Registered Hospitals</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Hospital Name</th>
+                <th>Type</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for hospital in hospitals %}
+            <tr>
+                <td>{{ hospital[0] }}</td>
+                <td>{{ hospital[1] }}</td>
+                <td>{{ hospital[2] }}</td>
+                <td>{{ hospital[4] }}</td>
+                <td>
+                    <form method="POST" action="/delete/{{ hospital[0] }}" onsubmit="return confirm('Are you sure?');">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

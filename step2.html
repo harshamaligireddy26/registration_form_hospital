@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Registration - Step 2</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Step 2: Hospital Registration Details</h2>
+    <form method="POST" action="/submit-step2" enctype="multipart/form-data">
+
+      <h3>1. Registration Information</h3>
+      <label>Registration Number:</label>
+      <input name="registration_number" required>
+
+      <label>Date of Establishment:</label>
+      <input name="establishment_date" type="date">
+
+      <label>License Number:</label>
+      <input name="license_number">
+
+      <label>Issuing Authority:</label>
+      <input name="issuing_authority">
+
+      <label>License Expiry Date:</label>
+      <input name="license_expiry_date" type="date">
+
+      <label>Accreditations:</label>
+      <select name="accreditations" multiple>
+        <option value="NABH">NABH</option>
+        <option value="JCI">JCI</option>
+        <option value="ISO">ISO Certification</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Upload Accreditation Documents:</label>
+      <input type="file" name="accreditation_docs">
+
+      <h3>2. Administrative Information</h3>
+      <label>Ownership Type:</label><br>
+      <input type="radio" name="ownership_type" value="Private"> Private<br>
+      <input type="radio" name="ownership_type" value="Government"> Government<br>
+      <input type="radio" name="ownership_type" value="PPP"> Public-Private Partnership<br>
+      <input type="radio" name="ownership_type" value="Other"> Other<br><br>
+
+      <label>CEO/Administrator Name:</label>
+      <input name="ceo_name">
+
+      <label>CEO Contact (Phone):</label>
+      <input name="ceo_phone">
+
+      <label>CEO Contact (Email):</label>
+      <input name="ceo_email" type="email">
+
+      <label>Medical Director Name:</label>
+      <input name="medical_director_name">
+
+      <label>Qualifications:</label>
+      <input name="medical_director_qualifications">
+
+      <label>Medical Director Contact (Phone):</label>
+      <input name="medical_director_phone">
+
+      <label>Medical Director Email:</label>
+      <input name="medical_director_email" type="email">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

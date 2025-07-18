@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  text-align: left;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+button[type="submit"] {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+.success-message {
+  text-align: center;
+  padding: 40px;
+}
+
+.success-message h2 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.success-message p {
+  font-size: 18px;
+  color: #333;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+/* static/style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b;
+}

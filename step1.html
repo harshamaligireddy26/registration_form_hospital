@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Registration - Step 1</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Step 1: Basic Hospital Info</h2>
+    <form method="POST" action="/submit-step1">
+      <label>Hospital Name:</label>
+      <input name="hospital_name" required>
+
+      <label>Hospital Type:</label>
+      <select name="hospital_type">
+        <option>General Hospital</option>
+        <option>Specialty Hospital</option>
+        <option>Clinic</option>
+        <option>Other</option>
+      </select>
+
+      <label>Address:</label>
+      <textarea name="address"></textarea>
+
+      <label>Phone:</label>
+      <input name="phone">
+
+      <label>Email:</label>
+      <input name="email" type="email">
+
+      <label>Website:</label>
+      <input name="website">
+
+      <button type="submit">Next</button>
+    </form>
+  </div>
+</body>
+</html>
